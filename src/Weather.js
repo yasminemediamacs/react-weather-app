@@ -15,45 +15,47 @@ export default function Weather() {
   };
 
   return (
-    <div className="weather-app-wrapper">
-      <div className="weather-app">
-        <Search />
-        <div className="overview">
-          <div className="row" id="information">
-            <div className="col-6 date">
-              <ul>
-                <li>Last updated: {weatherData.date}</li>
-                <br />
-                <li>{weatherData.description}</li>
-              </ul>
-            </div>
-            <div className="col-6 temperature-section">
-              <div className="clearfix weather-temperature">
-                <img
-                  src={weatherData.imgUrl}
-                  alt={weatherData.description}
-                  id="icon"
-                  className="float-left"
-                />
-                <div className="float-left">
-                  <strong>{weatherData.temperature}</strong>
-                  <span className="units">
-                    <a href="/" id="celsius-link" className="active">
-                      °C
-                    </a>
-                    |
-                    <a href="/" id="fahrenheit-link">
-                      °F
-                    </a>
-                  </span>
+    <div className="container">
+      <div className="weather-app-wrapper">
+        <div className="weather-app">
+          <Search />
+          <div className="overview">
+            <div className="row" id="information">
+              <div className="col-6 date">
+                <ul>
+                  <li>Last updated: {weatherData.date}</li>
+                  <br />
+                  <li>{weatherData.description}</li>
+                </ul>
+              </div>
+              <div className="col-6 temperature-section">
+                <div className="clearfix weather-temperature">
+                  <img
+                    src={weatherData.imgUrl}
+                    alt={weatherData.description}
+                    id="icon"
+                    className="float-left"
+                  />
+                  <div className="float-left">
+                    <strong>{weatherData.temperature}</strong>
+                    <span className="units">
+                      <a href="/" id="celsius-link" className="active">
+                        °C
+                      </a>
+                      |
+                      <a href="/" id="fahrenheit-link">
+                        °F
+                      </a>
+                    </span>
+                  </div>
                 </div>
               </div>
             </div>
+            <ul>
+              <li>Humidity: {weatherData.humidity}%</li>
+              <li>Wind: {weatherData.wind} km/h</li>
+            </ul>
           </div>
-          <ul>
-            <li>Humidity: {weatherData.humidity}%</li>
-            <li>Wind: {weatherData.wind} km/h</li>
-          </ul>
         </div>
       </div>
     </div>
