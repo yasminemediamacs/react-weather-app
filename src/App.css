@@ -1,38 +1,52 @@
-.App {
-  text-align: center;
+body {
+  font-family: "Raleway", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  color: #202225;
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  line-height: 26px;
+  margin: 40px 0 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+li {
+  display: inline;
+  padding-right: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+li:first-letter {
+  text-transform: capitalize;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+  color: #9d9da3;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #bdbdc0;
+}
+
+.container {
+  max-width: 600px;
+}
+
+.weather-app-wrapper {
+  margin: 50px auto;
+}
+
+.weather-app {
+  padding: 40px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  background: #cfe0e6;
 }
