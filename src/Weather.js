@@ -65,8 +65,10 @@ export default function Weather() {
         </div>
       </div>
       <small>
-        <a href="https://github.com/yasminemediamacs">Open-source</a> code by
-        Yasmine Senter
+        <a href="https://github.com/yasminemediamacs" className="github-url">
+          Open-source
+        </a>{" "}
+        code by Yasmine Senter
       </small>
     </div>
   );
