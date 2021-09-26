@@ -8,10 +8,6 @@ function App() {
   return (
     <div className="App">
       <Weather />
-      <small>
-        <a href="https://github.com/yasminemediamacs">Open-source</a> code by
-        Yasmine Senter
-      </small>
     </div>
   );
 }
