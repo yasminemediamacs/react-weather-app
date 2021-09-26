@@ -31,7 +31,7 @@ export default function Weather() {
               <div className="col-6 temperature-section">
                 <div className="clearfix weather-temperature">
                   <div className="row">
-                    <div className="col-6">
+                    <div className="col-5">
                       <img
                         src={weatherData.imgUrl}
                         alt={weatherData.description}
@@ -39,7 +39,7 @@ export default function Weather() {
                         className="float-left"
                       />
                     </div>
-                    <div className="col-6">
+                    <div className="col-7">
                       <div className="float-left">
                         <strong>{weatherData.temperature}</strong>
                         <span className="units">
