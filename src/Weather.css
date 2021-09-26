@@ -82,10 +82,6 @@
   text-decoration: none;
 }
 
-.github-url a {
-  text-decoration: none;
-}
-
 @media only screen and (max-width: 600px) {
   .weather-temperature img {
     margin-right: -10px;

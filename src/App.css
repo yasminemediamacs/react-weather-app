@@ -29,6 +29,7 @@ li:first-letter {
 
 a {
   color: #9d9da3;
+  text-decoration: none;
 }
 
 a:hover {
